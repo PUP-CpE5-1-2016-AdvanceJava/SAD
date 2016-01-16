@@ -11,3 +11,17 @@ C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_Final\IJA
 C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_Final\IJA_ConfigGUI\obj\Debug\IJA_ConfigGUI.csproj.GenerateResource.Cache
 C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_Final\IJA_ConfigGUI\obj\Debug\Attendance_GUI.exe
 C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_Final\IJA_ConfigGUI\obj\Debug\Attendance_GUI.pdb
+C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\IJA_ConfigGUI\bin\Debug\Attendance_GUI.exe.config
+C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\IJA_ConfigGUI\bin\Debug\Attendance_GUI.exe
+C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\IJA_ConfigGUI\bin\Debug\Attendance_GUI.pdb
+C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\IJA_ConfigGUI\bin\Debug\Interop.WMPLib.dll
+C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\IJA_ConfigGUI\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\IJA_ConfigGUI\obj\Debug\IJA_ConfigGUI.csprojResolveAssemblyReference.cache
+C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\IJA_ConfigGUI\obj\Debug\Interop.WMPLib.dll
+C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\IJA_ConfigGUI\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\IJA_ConfigGUI\obj\Debug\IJA_ConfigGUI.csproj.ResolveComReference.cache
+C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\IJA_ConfigGUI\obj\Debug\Attendance_GUI.Configuration.resources
+C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\IJA_ConfigGUI\obj\Debug\Attendance_GUI.Properties.Resources.resources
+C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\IJA_ConfigGUI\obj\Debug\IJA_ConfigGUI.csproj.GenerateResource.Cache
+C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\IJA_ConfigGUI\obj\Debug\Attendance_GUI.exe
+C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\IJA_ConfigGUI\obj\Debug\Attendance_GUI.pdb
