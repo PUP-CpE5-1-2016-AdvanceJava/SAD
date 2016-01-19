@@ -30,7 +30,6 @@ namespace Student_Attendance_Final
         {
 
             _Play();
-            int width, height;
             ac.setConnection(connectionString);
             //width = Screen.PrimaryScreen.Bounds.Width;
             //height = Screen.PrimaryScreen.Bounds.Height;

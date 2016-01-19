@@ -499,7 +499,6 @@
             this.delAttendanceBox.Text = "(type Id here)";
             this.delAttendanceBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.delAttendanceBox_MouseClick);
             this.delAttendanceBox.TabStopChanged += new System.EventHandler(this.delAttendanceBox_TabStopChanged);
-            this.delAttendanceBox.Leave += new System.EventHandler(this.delAttendanceBox_Leave);
             // 
             // groupBox10
             // 
@@ -903,7 +902,6 @@
             this.deleteStudBox.Text = "(type student Id here)";
             this.deleteStudBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.deleteStudBox_MouseClick);
             this.deleteStudBox.TabStopChanged += new System.EventHandler(this.deleteStudBox_TabStopChanged);
-            this.deleteStudBox.Leave += new System.EventHandler(this.deleteStudBox_Leave);
             // 
             // studentTable
             // 

@@ -1893,16 +1893,6 @@ namespace Student_Attendance_Final
             delAttendanceBox.Clear();
         }
 
-        private void deleteStudBox_Leave(object sender, EventArgs e)
-        {
-            deleteStudBox.Text = "(type student Id here)";
-        }
-
-        private void delAttendanceBox_Leave(object sender, EventArgs e)
-        {
-            delAttendanceBox.Text = "(type Id here)";
-        }
-
         private void confirmRevBtn_Click(object sender, EventArgs e)
         {
             //MessageBox.Show(dateTimePicker1.Text);
