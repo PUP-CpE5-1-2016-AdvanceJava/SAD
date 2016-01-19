@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 16, 2016 at 04:53 AM
+-- Generation Time: Jan 19, 2016 at 04:19 AM
 -- Server version: 5.6.21
 -- PHP Version: 5.5.19
 
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `attendance` (
   `TimeIn` time DEFAULT NULL,
   `TimeOut` time DEFAULT NULL,
   `TimeSwipes` text
-) ENGINE=InnoDB AUTO_INCREMENT=134 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=139 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `attendance`
@@ -68,12 +68,13 @@ INSERT INTO `attendance` (`Id`, `StudentId`, `Status`, `Remarks`, `Date`, `TimeI
 (125, 53, 'Present', NULL, '2016-01-15', '21:46:32', '21:48:12', '21:46:31.9126370,21:48:11.7885103,'),
 (126, 5680887, 'Present', NULL, '2016-01-15', '21:56:19', '22:33:07', '21:56:19.2637618,21:56:23.4408805,21:56:32.3524878,21:58:32.9885441,22:33:06.8069443,'),
 (127, 5672926, 'Present', NULL, '2016-01-15', '21:56:21', '22:33:05', '21:56:21.4725813,21:56:25.2269702,21:56:29.9385139,21:58:35.0775683,22:33:04.7573485,'),
-(128, 1, 'Present', NULL, '2016-01-16', '00:52:16', '10:52:53', '00:52:15.7229894,00:57:04.1617879,10:49:52.1024145,10:52:25.3648603,10:52:53.1473685,'),
-(129, 2, 'Late', NULL, '2016-01-16', '10:49:56', '10:52:54', '10:49:56.4351074,10:52:54.1408780,'),
+(128, 1, 'Present', NULL, '2016-01-16', '00:52:16', '23:30:03', '00:52:15.7229894,00:57:04.1617879,10:49:52.1024145,10:52:25.3648603,10:52:53.1473685,12:15:41.6968307,23:24:27.1083204,23:30:03.2466599,'),
+(129, 2, 'Late', NULL, '2016-01-16', '10:49:56', '23:30:05', '10:49:56.4351074,10:52:54.1408780,23:24:28.7357351,23:30:05.1755941,'),
 (130, 3, 'Late', NULL, '2016-01-16', '10:49:58', '10:54:01', '10:49:58.4069691,10:52:54.9459059,10:54:01.2561795,'),
-(131, 51, 'Late', NULL, '2016-01-16', '10:50:06', '10:54:02', '10:50:05.5133898,10:54:02.2956397,'),
-(132, 52, 'Present', NULL, '2016-01-16', '10:54:03', NULL, '10:54:03.4118681,'),
-(133, 53, 'Present', NULL, '2016-01-16', '10:54:05', NULL, '10:54:04.6342785,');
+(131, 51, 'Late', NULL, '2016-01-16', '10:50:06', '23:36:39', '10:50:05.5133898,10:54:02.2956397,23:32:43.2891517,23:36:16.3225719,23:36:39.4541520,'),
+(132, 52, 'Present', NULL, '2016-01-16', '10:54:03', '23:36:18', '10:54:03.4118681,23:32:47.2877806,23:36:18.2839890,'),
+(133, 53, 'Present', NULL, '2016-01-16', '10:54:05', '23:36:26', '10:54:04.6342785,23:36:25.7347178,'),
+(138, 5672926, 'Late', NULL, '2016-01-19', '11:16:42', NULL, '11:16:41.8015216,');
 
 -- --------------------------------------------------------
 
@@ -158,7 +159,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `Username` varchar(50) DEFAULT NULL,
   `Userpass` text,
   `Usertype` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
@@ -167,7 +168,8 @@ CREATE TABLE IF NOT EXISTS `users` (
 INSERT INTO `users` (`Id`, `Username`, `Userpass`, `Usertype`) VALUES
 (2, 'arar', 'a39da23fd6d9da5da2abe407f2e8fa7e', 'Administrator'),
 (4, 'jp', '55add3d845bfcd87a9b0949b0da49c0a', 'Administrator'),
-(5, 'monitor', '08b5411f848a2581a41672a759c87380', 'Monitor');
+(5, 'monitor', '08b5411f848a2581a41672a759c87380', 'Monitor'),
+(6, 'obs', 'dbabb977cec6af84577d101d6053b0b1', 'Observer');
 
 --
 -- Indexes for dumped tables
@@ -205,7 +207,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `attendance`
 --
 ALTER TABLE `attendance`
-MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=134;
+MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=139;
 --
 -- AUTO_INCREMENT for table `settings`
 --
@@ -220,7 +222,7 @@ MODIFY `Id` bigint(20) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=123456790;
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

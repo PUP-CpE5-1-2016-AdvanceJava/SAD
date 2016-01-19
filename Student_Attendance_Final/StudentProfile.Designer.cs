@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentProfile));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,15 +39,17 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label1.Location = new System.Drawing.Point(12, 175);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 14);
@@ -56,6 +59,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label2.Location = new System.Drawing.Point(12, 201);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 14);
@@ -65,6 +70,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label3.Location = new System.Drawing.Point(12, 227);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 14);
@@ -74,6 +81,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label4.Location = new System.Drawing.Point(12, 253);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 14);
@@ -83,6 +92,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label5.Location = new System.Drawing.Point(12, 279);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 14);
@@ -91,6 +102,8 @@
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.Color.LightCyan;
+            this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBox1.Location = new System.Drawing.Point(120, 172);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -99,6 +112,8 @@
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.Color.LightCyan;
+            this.textBox2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBox2.Location = new System.Drawing.Point(120, 198);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
@@ -107,6 +122,8 @@
             // 
             // textBox3
             // 
+            this.textBox3.BackColor = System.Drawing.Color.LightCyan;
+            this.textBox3.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBox3.Location = new System.Drawing.Point(120, 225);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
@@ -115,6 +132,8 @@
             // 
             // textBox4
             // 
+            this.textBox4.BackColor = System.Drawing.Color.LightCyan;
+            this.textBox4.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBox4.Location = new System.Drawing.Point(120, 252);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
@@ -123,11 +142,34 @@
             // 
             // textBox5
             // 
+            this.textBox5.BackColor = System.Drawing.Color.LightCyan;
+            this.textBox5.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBox5.Location = new System.Drawing.Point(120, 279);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(156, 20);
             this.textBox5.TabIndex = 4;
+            // 
+            // textBox6
+            // 
+            this.textBox6.BackColor = System.Drawing.Color.LightCyan;
+            this.textBox6.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.textBox6.Location = new System.Drawing.Point(120, 146);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(156, 20);
+            this.textBox6.TabIndex = 13;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.label6.Location = new System.Drawing.Point(11, 149);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(83, 14);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Student Code";
             // 
             // pictureBox1
             // 
@@ -141,28 +183,12 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(120, 146);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(156, 20);
-            this.textBox6.TabIndex = 13;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(11, 149);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 14);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Student Code";
-            // 
             // StudentProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.BackgroundImage = global::Student_Attendance_Final.Properties.Resources.BlueTechBackgroundVector2;
             this.ClientSize = new System.Drawing.Size(298, 352);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox6);
@@ -180,6 +206,8 @@
             this.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "StudentProfile";
             this.Text = "StudentProfile";
             this.Load += new System.EventHandler(this.StudentProfile_Load);

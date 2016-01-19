@@ -50,7 +50,7 @@ namespace Student_Attendance_Final
             //label3.Font = new Font(label3.Font.FontFamily, width / 50);
             setVideoPath();
             studName.Text = "--NAME--";
-
+            outMessage.Text = "";
             _Update();
             _Relocate();
         }
@@ -139,8 +139,17 @@ namespace Student_Attendance_Final
         private void scanCode()
         {
             string nameGradeSection = ac.studentIn(savedString);
-            studName.Text = nameGradeSection.Split('%')[0];
-            studGradeSection.Text = nameGradeSection.Split('%')[1];
+            if (nameGradeSection.Contains("%") == true)
+            {
+                studName.Text = nameGradeSection.Split('%')[0];
+                studGradeSection.Text = nameGradeSection.Split('%')[1];
+            }
+            else
+            {
+                studName.Text = nameGradeSection;
+                studGradeSection.Text = "Grade - Section";
+            }
+            outMessage.Text = ac.getStatus();
             savedString = "";
         }
 

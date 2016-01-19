@@ -34,3 +34,4 @@ C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFina
 C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.Properties.Resources.resources
 C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.StudentProfile.resources
 C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.csproj.GenerateResource.Cache
+C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.TimeHistory.resources
