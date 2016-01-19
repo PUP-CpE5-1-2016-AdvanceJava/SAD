@@ -34,6 +34,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AttendanceControl));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.MonitoringTab = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
@@ -203,11 +204,13 @@
             // 
             // tabControl1
             // 
+            this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.tabControl1.Controls.Add(this.MonitoringTab);
             this.tabControl1.Controls.Add(this.UserTab);
             this.tabControl1.Controls.Add(this.StudentTab);
             this.tabControl1.Controls.Add(this.EmailTab);
             this.tabControl1.Controls.Add(this.SettingsTab);
+            this.tabControl1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tabControl1.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(-5, -2);
             this.tabControl1.Name = "tabControl1";
@@ -222,16 +225,17 @@
             this.MonitoringTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.MonitoringTab.Controls.Add(this.tabControl2);
             this.MonitoringTab.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MonitoringTab.Location = new System.Drawing.Point(4, 25);
+            this.MonitoringTab.Location = new System.Drawing.Point(4, 28);
             this.MonitoringTab.Name = "MonitoringTab";
             this.MonitoringTab.Padding = new System.Windows.Forms.Padding(3);
-            this.MonitoringTab.Size = new System.Drawing.Size(889, 419);
+            this.MonitoringTab.Size = new System.Drawing.Size(889, 416);
             this.MonitoringTab.TabIndex = 0;
             this.MonitoringTab.Text = "MONITORING";
             this.MonitoringTab.UseVisualStyleBackColor = true;
             // 
             // tabControl2
             // 
+            this.tabControl2.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.tabControl2.Controls.Add(this.tabPage1);
             this.tabControl2.Controls.Add(this.tabPage2);
             this.tabControl2.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -245,16 +249,17 @@
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tabPage1.BackgroundImage = global::Student_Attendance_Final.Properties.Resources.BlueTechBackgroundVector2;
+            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.tabPage1.Controls.Add(this.groupBox16);
             this.tabPage1.Controls.Add(this.groupBox7);
             this.tabPage1.Controls.Add(this.groupBox6);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.AttendanceTable);
             this.tabPage1.Controls.Add(this.groupBox3);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 28);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(884, 386);
+            this.tabPage1.Size = new System.Drawing.Size(884, 383);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "CURRENT";
             // 
@@ -418,15 +423,16 @@
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tabPage2.BackgroundImage = global::Student_Attendance_Final.Properties.Resources.BlueTechBackgroundVector2;
+            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.tabPage2.Controls.Add(this.groupBox11);
             this.tabPage2.Controls.Add(this.groupBox10);
             this.tabPage2.Controls.Add(this.groupBox9);
             this.tabPage2.Controls.Add(this.groupBox4);
             this.tabPage2.Controls.Add(this.reviewTable);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 28);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(884, 386);
+            this.tabPage2.Size = new System.Drawing.Size(884, 383);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "REVIEW";
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
@@ -714,13 +720,14 @@
             // 
             this.UserTab.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.UserTab.BackgroundImage = global::Student_Attendance_Final.Properties.Resources.BlueTechBackgroundVector2;
+            this.UserTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.UserTab.Controls.Add(this.dataGridView1);
             this.UserTab.Controls.Add(this.groupBox1);
             this.UserTab.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserTab.Location = new System.Drawing.Point(4, 25);
+            this.UserTab.Location = new System.Drawing.Point(4, 28);
             this.UserTab.Name = "UserTab";
             this.UserTab.Padding = new System.Windows.Forms.Padding(3);
-            this.UserTab.Size = new System.Drawing.Size(889, 419);
+            this.UserTab.Size = new System.Drawing.Size(889, 416);
             this.UserTab.TabIndex = 1;
             this.UserTab.Text = "USERS";
             // 
@@ -748,7 +755,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.LightCyan;
-            this.groupBox1.Location = new System.Drawing.Point(40, 4);
+            this.groupBox1.Location = new System.Drawing.Point(46, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(320, 170);
             this.groupBox1.TabIndex = 0;
@@ -839,9 +846,9 @@
             this.StudentTab.Controls.Add(this.StudReg);
             this.StudentTab.Controls.Add(this.groupBox5);
             this.StudentTab.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudentTab.Location = new System.Drawing.Point(4, 25);
+            this.StudentTab.Location = new System.Drawing.Point(4, 28);
             this.StudentTab.Name = "StudentTab";
-            this.StudentTab.Size = new System.Drawing.Size(889, 419);
+            this.StudentTab.Size = new System.Drawing.Size(889, 416);
             this.StudentTab.TabIndex = 2;
             this.StudentTab.Text = "STUDENTS";
             // 
@@ -916,6 +923,7 @@
             // StudReg
             // 
             this.StudReg.BackColor = System.Drawing.Color.Transparent;
+            this.StudReg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.StudReg.Controls.Add(this.tbStudSname);
             this.StudReg.Controls.Add(this.label15);
             this.StudReg.Controls.Add(this.tbStudMname);
@@ -931,7 +939,7 @@
             this.StudReg.Controls.Add(this.tbStudId);
             this.StudReg.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StudReg.ForeColor = System.Drawing.Color.LightCyan;
-            this.StudReg.Location = new System.Drawing.Point(8, 9);
+            this.StudReg.Location = new System.Drawing.Point(11, 9);
             this.StudReg.Name = "StudReg";
             this.StudReg.Size = new System.Drawing.Size(386, 272);
             this.StudReg.TabIndex = 0;
@@ -1163,11 +1171,12 @@
             // 
             this.EmailTab.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.EmailTab.BackgroundImage = global::Student_Attendance_Final.Properties.Resources.BlueTechBackgroundVector2;
+            this.EmailTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.EmailTab.Controls.Add(this.groupBox12);
             this.EmailTab.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailTab.Location = new System.Drawing.Point(4, 25);
+            this.EmailTab.Location = new System.Drawing.Point(4, 28);
             this.EmailTab.Name = "EmailTab";
-            this.EmailTab.Size = new System.Drawing.Size(889, 419);
+            this.EmailTab.Size = new System.Drawing.Size(889, 416);
             this.EmailTab.TabIndex = 4;
             this.EmailTab.Text = "REPORT";
             // 
@@ -1466,11 +1475,12 @@
             // 
             this.SettingsTab.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.SettingsTab.BackgroundImage = global::Student_Attendance_Final.Properties.Resources.BlueTechBackgroundVector2;
+            this.SettingsTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.SettingsTab.Controls.Add(this.groupBox18);
             this.SettingsTab.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SettingsTab.Location = new System.Drawing.Point(4, 25);
+            this.SettingsTab.Location = new System.Drawing.Point(4, 28);
             this.SettingsTab.Name = "SettingsTab";
-            this.SettingsTab.Size = new System.Drawing.Size(889, 419);
+            this.SettingsTab.Size = new System.Drawing.Size(889, 416);
             this.SettingsTab.TabIndex = 5;
             this.SettingsTab.Text = "SETTINGS";
             // 
@@ -1833,6 +1843,7 @@
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "AttendanceControl";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

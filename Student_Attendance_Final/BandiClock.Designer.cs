@@ -37,6 +37,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.studGradeSection = new System.Windows.Forms.Label();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.outMessage = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
@@ -76,6 +77,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.outMessage);
             this.groupBox2.Controls.Add(this.studGradeSection);
             this.groupBox2.Controls.Add(this.studName);
             this.groupBox2.Location = new System.Drawing.Point(991, 452);
@@ -103,6 +105,15 @@
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(991, 781);
             this.axWindowsMediaPlayer1.TabIndex = 6;
             this.axWindowsMediaPlayer1.TabStop = false;
+            // 
+            // outMessage
+            // 
+            this.outMessage.AutoSize = true;
+            this.outMessage.Location = new System.Drawing.Point(131, 179);
+            this.outMessage.Name = "outMessage";
+            this.outMessage.Size = new System.Drawing.Size(85, 13);
+            this.outMessage.TabIndex = 12;
+            this.outMessage.Text = "Output Message";
             // 
             // BandiClock
             // 
@@ -144,5 +155,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label studGradeSection;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private System.Windows.Forms.Label outMessage;
     }
 }

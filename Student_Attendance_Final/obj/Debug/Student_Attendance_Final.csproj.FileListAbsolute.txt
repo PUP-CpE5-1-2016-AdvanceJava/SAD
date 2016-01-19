@@ -35,6 +35,7 @@ C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFina
 C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.Properties.Resources.resources
 C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.StudentProfile.resources
 C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.csproj.GenerateResource.Cache
+C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.TimeHistory.resources
 =======
 C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\bin\Debug\Student_Attendance_Final.exe.config
 C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\obj\Debug\Interop.WMPLib.dll
@@ -55,3 +56,4 @@ C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final
 C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.StudentProfile.resources
 C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.csproj.GenerateResource.Cache
 >>>>>>> 6373d3033c0db1e498c1a88d3711765be7521965
+>>>>>>> master

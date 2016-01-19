@@ -38,6 +38,7 @@ namespace Student_Attendance_Final
         //authority type
         string authority = "";
         string ipAddress;
+        string studentInStatus = "";
         //security
         static readonly string PasswordHash = "P@@Sw0rd";
         static readonly string SaltKey = "S@LT&KEY";
@@ -61,6 +62,7 @@ namespace Student_Attendance_Final
             setSectionFilter(StudFiltSection);
             setSectionFilter(studFiltSectionReview);
             getSettings();
+            observerPriveledge(authority);
             //bandiclock
             //bandi.setLabel("--NAME--");
             Screen[] screens = Screen.AllScreens;
@@ -68,6 +70,11 @@ namespace Student_Attendance_Final
             //play video
             //bandi.setVideoPath(videoPathBox.Text);
             //bandi._Play();
+        }
+
+        public string getStatus()
+        {
+            return studentInStatus;
         }
 
         public void setSectionFilter(ComboBox section)
@@ -370,6 +377,7 @@ namespace Student_Attendance_Final
 
         public string studentIn(string code)
         {
+            studentInStatus = "";
             insertStudent(code);
             return getStudentName(currDate, code);
         }
@@ -383,14 +391,16 @@ namespace Student_Attendance_Final
             if (string.IsNullOrEmpty(code))
             {
                 MessageBox.Show("Please Input the code");
+                studentInStatus = "Empty id code";
                 return;
             }
+
             long studCode = Convert.ToInt64(code);
 
             //check if the student code is registered
             if (!isCodeExist(studCode))
             {
-                MessageBox.Show("Student code is not yet registered. Please proceed on Students tab");
+                studentInStatus = "Student code is not yet registered.";
                 return;
             }
 
@@ -407,10 +417,11 @@ namespace Student_Attendance_Final
             TimeSpan timeNow = currTime.TimeOfDay;
 
             string status = "Present";
+            studentInStatus = "Present";
             if (timeNow >= timeToLate && timeNow < timeToAbsent)
             {
                 status = "Late";
-                //MessageBox.Show("Present");
+                studentInStatus = "Late";
             }
 
             //check student code if already scanned in current date
@@ -477,36 +488,33 @@ namespace Student_Attendance_Final
 
         private string getStudentName(string date, string code)
         {
-            if (string.IsNullOrEmpty(code))
+            if (studentInStatus == "Present" || studentInStatus == "Late")
             {
-                return "--NAME--";
-            }
-            string name = "";
-            string query = "SELECT Students.Fname, Students.Mname, Students.Sname, Students.Grade, Students.Section FROM Attendance INNER JOIN Students ON Attendance.StudentId = Students.Id WHERE Attendance.StudentId = " + Convert.ToInt64(code) + " AND Attendance.Date = '" + date + "'";
-            MySqlConnection connection = new MySqlConnection(connectionString);
-            MySqlCommand command = new MySqlCommand(query, connection);
-            try
-            {
-                connection.Open();
-                MySqlDataReader reader = null;
-                reader = command.ExecuteReader();
-                while (reader.Read())
+                string name = "";
+                string query = "SELECT Students.Fname, Students.Mname, Students.Sname, Students.Grade, Students.Section FROM Attendance INNER JOIN Students ON Attendance.StudentId = Students.Id WHERE Attendance.StudentId = " + Convert.ToInt64(code) + " AND Attendance.Date = '" + date + "'";
+                MySqlConnection connection = new MySqlConnection(connectionString);
+                MySqlCommand command = new MySqlCommand(query, connection);
+                try
                 {
-                    string fullName = reader["Fname"].ToString() + " " + reader["Mname"].ToString().Substring(0, 1) + ". " + reader["Sname"].ToString();
-                    name = fullName + "   %" + reader["Grade"].ToString() + "-" + reader["Section"].ToString();
-                    scannedName.Text = name.Replace("%","");
-                    
-                    return name;
+                    connection.Open();
+                    MySqlDataReader reader = null;
+                    reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        string fullName = reader["Fname"].ToString() + " " + reader["Mname"].ToString().Substring(0, 1) + ". " + reader["Sname"].ToString();
+                        name = fullName + "   %" + reader["Grade"].ToString() + "-" + reader["Section"].ToString();
+                        scannedName.Text = name.Replace("%", "");
+                        return name;
+                    }
+                }
+                catch (Exception er)
+                {
+                    MessageBox.Show(er.ToString());
+                    throw;
                 }
             }
-            catch (Exception er)
-            {
-                MessageBox.Show(er.ToString());
-                throw;
-            }
 
-            return "";
-
+            return "--NAME--";
         }
 
         private void showAttendance()
@@ -1112,6 +1120,8 @@ namespace Student_Attendance_Final
             label1.Size = new Size(35, 13);
             label1.TabIndex = 0;
             label1.Text = "Name: ";
+            label1.BackColor = System.Drawing.Color.Transparent;
+            label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
             th.Controls.Add(label1);
 
             TextBox textBox1 = new TextBox();
@@ -1130,6 +1140,8 @@ namespace Student_Attendance_Final
             label2.Size = new Size(35, 13);
             label2.TabIndex = 0;
             label2.Text = "Date: ";
+            label2.BackColor = System.Drawing.Color.Transparent;
+            label2.ForeColor = System.Drawing.Color.DeepSkyBlue;
             th.Controls.Add(label2);
 
             DateTimePicker dateLabel = new DateTimePicker();
@@ -1159,6 +1171,8 @@ namespace Student_Attendance_Final
                     label3.Size = new Size(35, 13);
                     label3.TabIndex = 0;
                     label3.Text = "Grade: ";
+                    label3.BackColor = System.Drawing.Color.Transparent;
+                    label3.ForeColor = System.Drawing.Color.DeepSkyBlue;
                     th.Controls.Add(label3);
 
                     TextBox textBox2 = new TextBox();
@@ -1177,6 +1191,8 @@ namespace Student_Attendance_Final
                     label4.Size = new Size(35, 13);
                     label4.TabIndex = 0;
                     label4.Text = "Section: ";
+                    label4.BackColor = System.Drawing.Color.Transparent;
+                    label4.ForeColor = System.Drawing.Color.DeepSkyBlue;
                     th.Controls.Add(label4);
 
                     TextBox textBox3 = new TextBox();
@@ -1195,6 +1211,8 @@ namespace Student_Attendance_Final
                     label5.Size = new Size(35, 13);
                     label5.TabIndex = 0;
                     label5.Text = "Time In: ";
+                    label5.BackColor = System.Drawing.Color.Transparent;
+                    label5.ForeColor = System.Drawing.Color.DeepSkyBlue;
                     th.Controls.Add(label5);
 
                     TextBox textBox4 = new TextBox();
@@ -1213,6 +1231,8 @@ namespace Student_Attendance_Final
                     label6.Size = new Size(35, 13);
                     label6.TabIndex = 0;
                     label6.Text = "Time Out: ";
+                    label6.BackColor = System.Drawing.Color.Transparent;
+                    label6.ForeColor = System.Drawing.Color.DeepSkyBlue;
                     th.Controls.Add(label6);
 
                     TextBox textBox5 = new TextBox();
@@ -1231,6 +1251,8 @@ namespace Student_Attendance_Final
                     label7.Size = new Size(35, 13);
                     label7.TabIndex = 6;
                     label7.Text = "Status: ";
+                    label7.BackColor = System.Drawing.Color.Transparent;
+                    label7.ForeColor = System.Drawing.Color.DeepSkyBlue;
                     th.Controls.Add(label7);
 
                     TextBox textBox6 = new TextBox();
@@ -1249,6 +1271,8 @@ namespace Student_Attendance_Final
                     label8.Size = new Size(35, 13);
                     label8.TabIndex = 7;
                     label8.Text = "Swipes: ";
+                    label8.BackColor = System.Drawing.Color.Transparent;
+                    label8.ForeColor = System.Drawing.Color.DeepSkyBlue;
                     th.Controls.Add(label8);
 
                     string swipesText = reader["TimeSwipes"].ToString();
@@ -1558,37 +1582,38 @@ namespace Student_Attendance_Final
                     sp.setSname(reader["Sname"].ToString());
                     sp.setGrade(reader["Grade"].ToString());
                     sp.setSection(reader["Section"].ToString());
-
                     // 
                     // button1
-                    // 
-                    Button studEditProfileBtn = new Button();
-                    studEditProfileBtn.Location = new System.Drawing.Point(120, 319);
-                    studEditProfileBtn.Name = "editBtn";
-                    studEditProfileBtn.Size = new System.Drawing.Size(75, 23);
-                    studEditProfileBtn.TabIndex = 12;
-                    studEditProfileBtn.Text = "Edit";
-                    studEditProfileBtn.UseVisualStyleBackColor = true;
-                    studEditProfileBtn.TabIndex = 5;
-                    studEditProfileBtn.Click += new System.EventHandler(sp.studProfEdit);
-                    studEditProfileBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-                    sp.Controls.Add(studEditProfileBtn);
-                    // 
-                    // button2
-                    // 
-                    Button studEditSubmitBtn = new Button();
-                    studEditSubmitBtn.Location = new System.Drawing.Point(201, 319);
-                    studEditSubmitBtn.Name = "submitBtn";
-                    studEditSubmitBtn.Size = new System.Drawing.Size(75, 23);
-                    studEditSubmitBtn.TabIndex = 13;
-                    studEditSubmitBtn.Text = "Submit";
-                    studEditSubmitBtn.UseVisualStyleBackColor = true;
-                    studEditSubmitBtn.TabIndex = 6;
-                    studEditSubmitBtn.Click += new System.EventHandler(sp.studProfEditSubmit);
-                    studEditSubmitBtn.Click += new System.EventHandler(studProfEditSubmit);
-                    studEditSubmitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-                    sp.Controls.Add(studEditSubmitBtn);
-
+                    //
+                    if (authority == "Administrator")
+                    {
+                        Button studEditProfileBtn = new Button();
+                        studEditProfileBtn.Location = new System.Drawing.Point(120, 319);
+                        studEditProfileBtn.Name = "editBtn";
+                        studEditProfileBtn.Size = new System.Drawing.Size(75, 23);
+                        studEditProfileBtn.TabIndex = 12;
+                        studEditProfileBtn.Text = "Edit";
+                        studEditProfileBtn.UseVisualStyleBackColor = true;
+                        studEditProfileBtn.TabIndex = 5;
+                        studEditProfileBtn.Click += new System.EventHandler(sp.studProfEdit);
+                        studEditProfileBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+                        sp.Controls.Add(studEditProfileBtn);
+                        // 
+                        // button2
+                        // 
+                        Button studEditSubmitBtn = new Button();
+                        studEditSubmitBtn.Location = new System.Drawing.Point(201, 319);
+                        studEditSubmitBtn.Name = "submitBtn";
+                        studEditSubmitBtn.Size = new System.Drawing.Size(75, 23);
+                        studEditSubmitBtn.TabIndex = 13;
+                        studEditSubmitBtn.Text = "Submit";
+                        studEditSubmitBtn.UseVisualStyleBackColor = true;
+                        studEditSubmitBtn.TabIndex = 6;
+                        studEditSubmitBtn.Click += new System.EventHandler(sp.studProfEditSubmit);
+                        studEditSubmitBtn.Click += new System.EventHandler(studProfEditSubmit);
+                        studEditSubmitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+                        sp.Controls.Add(studEditSubmitBtn);
+                    }
                 }
             }
             catch (Exception er)
@@ -1941,7 +1966,22 @@ namespace Student_Attendance_Final
             }
         }
 
+        private void observerPriveledge(string userType)
+        {
+            if (userType == "Observer")
+            {
+                groupBox3.Hide();
+                groupBox2.Hide();
+                groupBox11.Hide();
+                groupBox1.Hide();
+                StudReg.Hide();
+                groupBox8.Hide();
+                settingsSaveBtn.Hide();
+                settingsResetBtn.Hide();
 
+                groupBox5.Location = new System.Drawing.Point(11, 9);
+            }
+        }
 
     }
 }
