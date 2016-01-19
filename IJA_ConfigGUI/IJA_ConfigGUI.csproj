@@ -110,6 +110,24 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip_background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ipconfig.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\config.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ipc.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

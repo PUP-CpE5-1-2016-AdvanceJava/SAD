@@ -16,6 +16,7 @@ C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_Final\Stu
 C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_Final\Student_Attendance_Final\bin\Debug\MySql.Data.dll
 C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_Final\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.csprojResolveAssemblyReference.cache
 C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_Final\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.Login.resources
+<<<<<<< HEAD
 C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\Student_Attendance_Final\bin\Debug\Student_Attendance_Final.exe.config
 C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\Student_Attendance_Final\obj\Debug\Interop.WMPLib.dll
 C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\Student_Attendance_Final\obj\Debug\AxInterop.WMPLib.dll
@@ -34,3 +35,23 @@ C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFina
 C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.Properties.Resources.resources
 C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.StudentProfile.resources
 C:\Users\arar\Documents\Visual Studio 2013\Projects\Student_Attendance_FInalFinal\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.csproj.GenerateResource.Cache
+=======
+C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\bin\Debug\Student_Attendance_Final.exe.config
+C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\obj\Debug\Interop.WMPLib.dll
+C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.csproj.ResolveComReference.cache
+C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.exe
+C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.pdb
+C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\bin\Debug\Student_Attendance_Final.exe
+C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\bin\Debug\Student_Attendance_Final.pdb
+C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\bin\Debug\MySql.Data.dll
+C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\bin\Debug\Interop.WMPLib.dll
+C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.csprojResolveAssemblyReference.cache
+C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.AttendanceControl.resources
+C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.BandiClock.resources
+C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.Login.resources
+C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.Properties.Resources.resources
+C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.StudentProfile.resources
+C:\Users\ShantiEstolas\Desktop\Student_Attendance_Final\Student_Attendance_Final\obj\Debug\Student_Attendance_Final.csproj.GenerateResource.Cache
+>>>>>>> 6373d3033c0db1e498c1a88d3711765be7521965
